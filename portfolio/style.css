@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('votre-image.jpg'); /* Assurez-vous d'avoir une image nommée 'votre-image.jpg' */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Dégradé bleu foncé/violet */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #333;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Dégradé bleu foncé/violet */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    font-weight: bold; /* Texte en gras */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Effet de survol */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Vert foncé */
+}
+
+/* Animation de fondu */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+body.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #4ca1af;
+}
+
+article {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header h1, footer p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1, footer p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+}
+
+/* Espacement des champs du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace de 20 pixels entre les champs */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bouton de soumission */
+form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
